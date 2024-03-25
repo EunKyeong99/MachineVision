@@ -42,6 +42,7 @@ hist_dst_img = draw_histo(hist_dst,(200, 300))
 
 print("high_value = ", high)
 print("low_value = ", low)
+
 cv2.imshow("image", image);
 cv2.imshow("dst", dst);
 cv2.imshow("hist_img", hist_img)
