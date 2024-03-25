@@ -1,7 +1,7 @@
 import cv2
 
 title1 = "imread Test"
-image = cv2.imread('../read_color.jpg')
+image = cv2.imread('../image/read_color.jpg')
 if image is None:
     print("파일 읽기 오류")
 
