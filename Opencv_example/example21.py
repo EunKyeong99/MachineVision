@@ -29,6 +29,7 @@ def contain_pts(p, p1, p2):
     return p1[0] <= p[0] < p2[0] and p1[1] <= p[1] < p2[1]
 
 image = cv2.imread("../image/perspective2.jpg")
+if image is None: raise Exception("영상 파일 읽기 에러")
 
 small = np.array((12, 12))
 check = -1
