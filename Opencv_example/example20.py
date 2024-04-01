@@ -22,6 +22,7 @@ for i in range(len(pts4)):
     cv2.circle(image, tuple(pts1[i].astype(int)), 4, (0, 255, 0), -1)
     cv2.circle(dst, tuple(pts2[i].astype(int)), 4, (0, 255, 0), -1)
 
+
 cv2.imshow("image", image)
 cv2.imshow("dst_perspective", dst)
 cv2.waitKey(0)
