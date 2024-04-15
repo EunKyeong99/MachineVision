@@ -15,8 +15,7 @@ label[:nsample], label[nsample:] = 0 , 1
 
 K = 7
 knn = cv2.ml.KNearest_create()  # kNN 클래스로 객체 생성
-knn.train(traindata, cv2.ml.ROW_SAMPLE, label)  # 학습 수행
-
+knn.train(traindata, cv2.ml.ROW_SAMPLE, label)
 points = [(x, y) for y in range(400) for x in range(400)  ]
 ret, resp, neig, dist = knn.findNearest(np.array(points, np.float32), K)
 
