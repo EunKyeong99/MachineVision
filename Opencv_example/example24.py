@@ -17,7 +17,7 @@ K = 7
 knn = cv2.ml.KNearest_create()  # kNN 클래스로 객체 생성
 knn.train(traindata, cv2.ml.ROW_SAMPLE, label)
 points = [(x, y) for y in range(400) for x in range(400)  ]
-ret, resp, neig, dist = knn.findNearest(np.array(points, np.float32), K)
+ret, resp, neig, dist = knn.findNearest(np.array(points, np.float32), K)  # 분류 수행
 
 colors = [(0, 180, 0) if p==1 else  (0, 0, 180) for p in resp]
 image = np.reshape(colors, (400,400,3)).astype("uint8")

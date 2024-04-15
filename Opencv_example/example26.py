@@ -21,7 +21,7 @@ def morphing():
 def onMouse(event, x, y, flags, param):
     global pt1, pt2
     if event == cv2.EVENT_LBUTTONDOWN:
-        pt1 = (x, y)
+        pt1 = (x, y)                               # 드래그 시작 좌표
     elif event == cv2.EVENT_LBUTTONUP:
         pt2 = (x, y)                               # 드래그 종료 좌표
         morphing()                                 # 드래그 종료 시 워핑 변환 수행
