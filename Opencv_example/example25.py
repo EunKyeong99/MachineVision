@@ -39,5 +39,5 @@ accur = sum(test_label[:nsample] == resp.flatten()) / len(resp)       # 성능 �
 
 print("정확도=", accur*100, '%')
 graph_image(train_data, train_label, 'label', 24)                   # 학습 데이터 그리기
-graph_image(test_data[:nsample], resp, 'predict', 24)                #
+graph_image(test_data[:nsample], resp, 'predict', 24)
 plt.show()
