@@ -1,5 +1,4 @@
 import numpy as np, cv2
-
 def filter(image, mask):
     rows, cols, channels = image.shape
     dst = np.zeros_like(image, dtype=np.float32)
@@ -31,7 +30,7 @@ def brightness_image(image, brightness=30, saturation=30):
     image_result = cv2.cvtColor(final_hsv, cv2.COLOR_HSV2BGR)
     return image_result
 
-image = cv2.imread("./image/Lenna.png", cv2.IMREAD_COLOR)
+image = cv2.imread('Lenna.png', cv2.IMREAD_COLOR)
 if image is None: raise Exception("영상 파일 읽기 오류")
 
 data = [1/25, 1/25, 1/25, 1/25, 1/25,

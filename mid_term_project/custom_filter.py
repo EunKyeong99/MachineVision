@@ -21,7 +21,7 @@ def LensDistortionImage(img, exp=2, scale=1):
     return result
 
 
-image = cv2.imread('./image/Lenna.png')
+image = cv2.imread('Lenna.png')
 if image is None: raise Exception("영상 파일 읽기 오류")
 
 convex = LensDistortionImage(image, exp=2)

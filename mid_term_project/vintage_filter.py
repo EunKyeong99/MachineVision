@@ -17,7 +17,7 @@ def add_noise(image, mean=0, var=300):
     noisy = np.clip(noisy, 0, 255)
     return noisy.astype(np.uint8)
 
-image = cv2.imread('./image/Lenna.png')
+image = cv2.imread('Lenna.png')
 if image is None: raise Exception("영상 파일 읽기 오류")
 
 sepia_image = add_sepia(image)

@@ -24,7 +24,7 @@ def add_noise(image, mean=0, var=300):
     noisy = np.clip(noisy, 0, 255)
     return noisy.astype(np.uint8)
 
-image = cv2.imread('./image/Lenna.png', cv2.IMREAD_COLOR)
+image = cv2.imread('Lenna.png', cv2.IMREAD_COLOR)
 if image is None: raise Exception("영상 파일 읽기 오류")
 
 toned_image = adjust_temperature(image, adjustment=10)
