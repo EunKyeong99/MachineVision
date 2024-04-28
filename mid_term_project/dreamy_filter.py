@@ -1,6 +1,4 @@
-import numpy as np
-import cv2
-
+import numpy as np, cv2
 def filter(image, mask):
     rows, cols, channels = image.shape
     dst = np.zeros_like(image, dtype=np.float32)

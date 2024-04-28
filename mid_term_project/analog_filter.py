@@ -1,4 +1,4 @@
-import numpy as np,
+import numpy as np, cv2
 
 def adjust_temperature(image, adjustment):
     b, g, r = cv2.split(image)
@@ -20,7 +20,7 @@ def add_noise(image, mean=0, var=300):
     row, col, ch = image.shape
     sigma = var ** 0.5
     gauss = np.random.normal(mean, sigma, (row, col, ch)).astype(np.float32)
-    noisy = cv2.add(image.astype(np.float32), gauss)1
+    noisy = cv2.add(image.astype(np.float32), gauss)
     noisy = np.clip(noisy, 0, 255)
     return noisy.astype(np.uint8)
 
