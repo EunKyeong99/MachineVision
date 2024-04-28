@@ -1,5 +1,6 @@
 import numpy as np, cv2
 
+
 def add_sepia(image):
     sepia_matrix = np.array([[0.272, 0.534, 0.131],
                              [0.349, 0.686, 0.168],

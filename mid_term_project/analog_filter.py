@@ -1,5 +1,6 @@
 import numpy as np, cv2
 
+
 def adjust_temperature(image, adjustment):
     b, g, r = cv2.split(image)
     if adjustment > 0:
