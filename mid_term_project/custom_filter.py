@@ -1,6 +1,5 @@
 import numpy as np, cv2
 
-
 def LensDistortionImage(img, exp=2, scale=1):
     rows, cols = img.shape[:2]
 
